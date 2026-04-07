@@ -63,7 +63,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"andreyan67.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"xBbiL1zGEJJ8icZ8kkZjsN82-MdYXbMMI","app_key":"bf7l6BgFcNn1aUkqoj3e6vB6","server_url":null,"path":"window.location.pathname","ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"andreyan67.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"xBbiL1zGEJJ8icZ8kkZjsN82-MdYXbMMI","app_key":"bf7l6BgFcNn1aUkqoj3e6vB6","server_url":null,"path":"window.location.pathname","ignore_local":true},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,14 +86,15 @@
     
   
 
+  
+    
+  
+
+
 
 
   
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 
 <body>
@@ -115,7 +116,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -199,6 +200,109 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
 <div id="banner" class="banner" parallax=true
@@ -224,6 +328,8 @@
   </div>
 </div>
 
+
+
 </div>
 
   </header>
@@ -239,6 +345,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">AndreyAn</h1>
 
   <div class="row mx-auto index-card">
     
@@ -254,7 +361,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2025/12/03/%E4%BB%8E%E7%BA%A6%E7%BF%B0%C2%B7%E5%86%AF%E3%83%BB%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%9A%84%E8%A7%86%E8%A7%92%E6%9D%A5%E7%9C%8B%EF%BC%8C%E4%BA%8C%E5%8D%81%E4%B8%96%E7%BA%AA%E7%9A%84%E6%95%B0%E5%AD%A6%E6%98%AF%E4%BB%8E%E4%B8%93%E4%B8%9A%E5%8C%96%E8%B5%B0%E5%90%91%E6%99%AE%E9%80%82%E5%8C%96%E3%80%81%E7%BB%9F%E4%B8%80%E5%8C%96%E7%9A%84/" target="_self">
         <div>
-          引言：约翰·冯·诺伊曼的数学宇宙及其时代背景 1957年2月8日，一个寒冷的冬天，约翰·冯·诺伊曼（John von Neumann）在华盛顿特区的沃尔德·里德陆军医院因为癌症去世，年仅53岁。这位出生于奥匈帝国布达佩斯的匈牙利裔美国学者，以其惊人的智力，在短短数十年间，以一种神奇的方式，重塑了纯粹数学、应用数学、理论物理学、计算机科学、经济学乃至军事战略等多个学科的面貌。他一生担任过许多科学
+          引言：约翰·冯·诺伊曼的数学宇宙及其时代背景 1957年2月8日，一个寒冷的冬天，约翰·冯·诺伊曼（John von Neumann）在华盛顿特区的沃尔德·里德陆军医院因为癌症去世，年仅53岁。这位出生于奥匈帝国布达佩斯的匈牙利裔美国学者，以其惊人的智力，在短短数十年间，以一种神奇的方式，重塑了纯粹数学、应用数学、理论物理学、计算机科学、经济学乃至军事战略等多个学科的面貌。他一生担任过许多科学职位
         </div>
       </a>
 
@@ -315,7 +422,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2025/11/21/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95/" target="_self">
         <div>
-          文章转载自知乎 yhangf反向传播算法 反向传播算法用来训练人工神经网络 （Artificial Neural Network, ANN） 的最常用且最有效的算法，，其主要思想是：将训练集数据输入到 ANN 的输入层，经过隐藏层，最后达到输出层并输出结果，这是 ANN 的前向传播过程；由于 ANN 的输出结果与实际结果有误差，则先计算估计值与实际值之间的误差，并将该误差从输出层向隐藏
+          文章转载自知乎 yhangf反向传播算法 反向传播算法是用来训练人工神经网络 （Artificial Neural Network, ANN） 的最常用且最有效的算法，，其主要思想是：将训练集数据输入到 ANN 的输入层，经过隐藏层，最后达到输出层并输出结果，这是 ANN 的前向传播过程；由于 ANN 的输出结果与实际结果有误差，则先计算估计值与实际值之间的误差，并将该误差从输出层向隐藏层反向传播
         </div>
       </a>
 
@@ -498,6 +605,8 @@
 
 
   <script defer src="/js/leancloud.js" ></script>
+
+  <script defer src="/js/openkounter.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
